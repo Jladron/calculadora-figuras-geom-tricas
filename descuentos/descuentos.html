@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descuentos | curos práctico de javascript</title>
+</head>
+<body>
+    <header>
+        <h1>Porcentajes y descuentos</h1>
+        <p>Este es el segundo taller del curso práctico de JavaScript</p>
+    </header>
+    <section>
+        <h2>Calcula el precio a pagar de tus productos con descuentos</h2>
+
+        <form action="">
+            <label for="inputPrice">Introduce el precio de tu producto</label>
+            <input type="number" id="inputPrice">
+            <br>
+            <label for="inputDiscount">Introduce el descuento que quieres aplicar</label>
+            <input type="number" id="inputDiscount">
+            <br>
+            <button type="button" onclick="calcularPrecioConDescuento()">calcular el precio final</button>
+            <br>
+            <p id="result"></p>
+            <br>
+            <select name="coupon" id="inputCoupon">
+                <option value="15" selected="yes">15%</option>
+                <option value="25">25%</option>
+                <option value="45">45%</option>
+            </select>
+            <br>
+            <button type="button" onclick="calcularPrecioConCupon()">precio final con cupón</button>
+            <br>
+            <p id="resultCoupon"></p>
+        </form>
+    </section>
+    <br>
+    <section>
+        <h2>Aplicación de descuento por códigos promocionales</h2>
+
+        <form action="">
+            <label for="promotionalCode">¿Tienes un código promocional? Introdúcelo y empieza a ahorrar ya</label>
+            <br>
+            <input type="text" id="promotionalCode">
+            <br>
+            <button type="button" onclick="calcularPrecioConCodigoPromocional()">calcular precio con descuento</button>
+            <p class="resultPromotionCode"></p>
+        </form>
+    </section>
+
+    <script src="./descuentos.js"></script>
+</body>
+</html>

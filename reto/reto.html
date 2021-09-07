@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Final Cursor práctico de JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>Reto Final del curso básico de JavaScript</h1>
+    </header>
+    <section>
+        <h2>Carga de datos</h2>
+        <p>Introduce el nombre, sueldo, pais y sexo de la persona para 
+        poder hacer el análisis.
+        </p>
+        <form action="">
+            <label for="inputName">Nombre</label>
+            <input id="inputName" type="text" required>
+            <br>
+            <label for="inputSalary">salario</label>
+            <input id="inputSalary" type="number" required>
+            <br>
+            <label for="inputCountry">Pais</label>
+            <select name="inputCountry" id="inputCountry" required>
+                <option value="españa" selected="selected">España</option>
+                <option value="colombia">Colombia</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="mexico">Mexico</option>
+            </select>
+            <br>
+            <label for="inputSex">Sexo</label>
+            <select name="inputSex" id="inputSex">
+                <option value="woman" selected="selected">Mujer</option>
+                <option value="male">Hombre</option>
+            </select>
+
+            <br>
+            <button type="button" onclick="introducir()">Introducir</button>
+            <button type="button" onclick="borrarUltimo()">Borrar último</button>
+        </form>
+    </section>
+    <section>
+        <h2>Muestra de los datos</h2>
+        <button type="button" onclick="crearTabla()">Mostrar datos</button>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Sueldo</th>
+                <th>Pais</th>
+                <th>Sexo</th>
+            </tr>
+        </table>
+        <div class="" id="table"></div>
+    </section>
+
+
+    <script src="./reto.js"></script>
+</body>
+</html>
